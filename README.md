@@ -15,3 +15,5 @@ The biggest issue I ran into was that my project accidentally got created inside
 I also had a small hiccup pushing to GitHub — I accidentally typed `git remote add origin` twice in one line and included `< >` brackets around the URL from the instructions, which caused a syntax error. Removing the extra command and the brackets fixed it.
 
 ## Screenshot
+
+<img width="1210" height="987" alt="CS81 local host ss" src="https://github.com/user-attachments/assets/ca604ec0-1e89-4337-b949-2be9d1f8cd07" />
