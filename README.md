@@ -1,16 +1,17 @@
-# React + Vite
+# Module 9A - Build Your First React Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Description
+This is a React app created using Vite that renders a UserProfile component. The component includes a name, bio, and image styled with inline CSS.
 
-Currently, two official plugins are available:
+## What I Learned
+- How to set up a React project using Vite
+- How to write and structure a functional React component
+- How to use JSX and inline styles
+- How to render a component in App.jsx
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Challenges
+The biggest issue I ran into was that my project accidentally got created inside `C:\Windows\System32` instead of a normal folder, probably because I had Command Prompt open as Administrator. I didn't notice until I tried to save `UserProfile.jsx` in VS Code and got a permissions error (`EPERM: operation not permitted`), Windows doesn't let regular file edits happen in that system folder. I fixed it by closing everything, reopening a normal non-administrator Command Prompt, navigating to my Documents folder instead, and recreating the whole project there with `npm create vite@latest` again.
 
-## React Compiler
+I also had a small hiccup pushing to GitHub — I accidentally typed `git remote add origin` twice in one line and included `< >` brackets around the URL from the instructions, which caused a syntax error. Removing the extra command and the brackets fixed it.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Screenshot
